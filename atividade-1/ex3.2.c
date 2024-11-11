@@ -20,6 +20,11 @@ int main(){
     }
     resultado = pares(tamanho_vet, vet);
     printf("Qtd numeros pares: %d", resultado);
+
+    // Liberação de memória alocada
+    free(vet);
+
+    return 0;
 }
 
 int pares(int n, int* vet){
