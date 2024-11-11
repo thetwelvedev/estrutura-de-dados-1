@@ -21,6 +21,11 @@ int main(){
     resultado = negativos(tamanho_vet,vet);
     printf("Qtd numeros negativos: %d", resultado);
 
+    // Liberação de memória alocada
+    free(vet);
+
+    return 0;
+
 }
 
 int negativos(int n, float* vet){
