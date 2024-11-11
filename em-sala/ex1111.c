@@ -31,13 +31,15 @@ int main(){
 
     //Liberação de memória alocada
     liberarMemoria(&num, &notas);
+
+    return 0;
 }
 
 //O notas tá *notas pois ele tá sendo acessado pelo ponteiro triplo
 void alocarMatriz(int* num, int* numDiciplinas, double ***notas){
     //*num tá assim pois quero o valor e não o endereço de memória
     *notas = (double**) malloc((*num) * sizeof(double*));
-    for(int i; i < *num; i++){
+    for(int i = 0; i < *num; i++){
         (*notas)[i] = (double*) malloc((*numDiciplinas) *sizeof(double));
     }
 }
@@ -55,37 +57,31 @@ void coletarNotas(int* num, int* numDiciplinas, double ***notas){
 
 //Calcular e exibir a média de cada aluno (média das notas em todas as disciplinas).
 void mediaPorAluno(int* num, int* numDiciplinas, double ***notas){
-    double media = 0, contador = 0;
     printf("Media por aluno: \n");
     for(int i = 0; i < *num; i++){
+        //Zerar as variáveis para cada próximo ciclo
+        double media = 0;
         printf("Aluno %d - ", i+1);
         for(int j = 0; j < *numDiciplinas; j++){
             media += (*notas)[i][j];
-            contador++;
         }
-        media /= contador;
+        media /= *numDiciplinas;
         printf("Media: %.2f\n", media);
-        //Zerar as variáveis para o próximo ciclo
-        media = 0;
-        contador = 0;
     }
 }
 
 //Calcular e exibir a média de cada disciplina (média das notas de todos os alunos para uma disciplina específica).
 void mediaPorDisciplina(int* num, int* numDiciplinas, double ***notas){
-    double media = 0, contador = 0;
     printf("Media por Disciplina: \n");
     for(int j = 0; j < *numDiciplinas; j++){
+        //Zerar as variáveis para cada próximo ciclo
+        double media = 0;
         printf("Disciplina %d - ", j+1);
         for(int i = 0; i < *num; i++){
             media += (*notas)[i][j];
-            contador++;
         }
-        media /= contador;
+        media /= *num;
         printf("Media: %.2f\n", media);
-        //Zerar as variáveis para o próximo ciclo
-        media = 0;
-        contador = 0;
     }
 }
 /*Ao inverter linha por coluna, os dados que ficavam na linha que antes era as notas de um aluno só mas disciplinas diferentes, agora são mesma disciplina e 
