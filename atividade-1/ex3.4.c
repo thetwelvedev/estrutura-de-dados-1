@@ -26,11 +26,6 @@ int main(){
 
     resultado = avalia(poli , grau, x);
     printf("P(x) = %.2f", resultado);
-
-    // Liberação de memória alocada
-    free(poli);
-
-    return 0;
 }
 
 double avalia (double* poli, int grau, double x){

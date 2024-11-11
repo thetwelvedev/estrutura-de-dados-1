@@ -29,11 +29,6 @@ int main(){
     for (int i = 0; i < tamanho_vet; i++){
         printf("%d ", vet[i]);
     }
-
-    // Liberação de memória alocada
-    free(vet);
-
-    return 0;
 }
 
 void inverte(int n, int* vet){
