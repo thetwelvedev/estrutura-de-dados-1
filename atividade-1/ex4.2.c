@@ -36,8 +36,9 @@ int main(){
     }
 
     //Liberação de memória alocada
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < n; i++){
         free(matrizTriangular[i]);
+    }
     free(matrizTriangular);
 
     return 0;
