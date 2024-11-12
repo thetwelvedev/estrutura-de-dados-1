@@ -18,7 +18,10 @@ int main(){
     //Preenchendo a matriz com 1
      for(int i = 0; i < n; i++) { // Linha
         for(int j = i; j < n; j++) { /*Coluna - Aqui igual j = i, pois no primeiro laço vai de 0 a 2, no segundo 1 a 2, no terceiro só 2, acessando assim só a diagonal principal*/
-            matrizTriangular[i][j] = 1;
+            matrizTriangular[i][j - i] = 1; /*Apesar de na hora de imprimir vai ser a diagonal principal para cima nos alocamos da seguinte forma:
+            linha 0 -> [0][0] [0][1] [0][2]
+            linha 1 -> [1][0] [1][1]
+            linha 2 -> [2][0] pois você sempre aloca vindo da primeira posição que é onde o ponteiro do vetor aponta*/
         }
     }
 
@@ -29,7 +32,7 @@ int main(){
             if(i > j){
                 printf(" 0.0 "); //A parte nula da matriz
             } else {
-                printf(" %.1f ", matrizTriangular[i][j]);
+                printf(" %.1f ", matrizTriangular[i][j - i]);
             }
         }
         printf("\n");
