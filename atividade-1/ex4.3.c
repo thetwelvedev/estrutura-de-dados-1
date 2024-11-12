@@ -23,6 +23,7 @@ int main(){
     }
 
     //Printando a matriz triangular superior
+    printf("Matriz Triangular Superior\n");
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++) { 
             if(i > j){
@@ -35,12 +36,12 @@ int main(){
     }
 
     //Liberação de memória alocada
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < n; i++){
         free(matrizTriangular[i]);
+    }
     free(matrizTriangular);
 
     return 0;
-
 }
 
 float** criaMatrizTriangularSuperior(int n){
@@ -53,5 +54,4 @@ float** criaMatrizTriangularSuperior(int n){
         Na linha 2, ela aloca espaço para 1 elemento*/
     }
     return matTriSup;
-
 }
