@@ -31,7 +31,7 @@ void lerCoordenadaPonto(Ponto* ponto) {
 int distanciaDeDoisPonto(Circulo c, Ponto p1, Ponto p2){
     //d = raiz((x2-x1)^2 +(y2-y1)^2);
     float d = sqrt(pow((p2.x - p1.x),2) + pow((p2.y - p1.y),2));
-    if(d  <= c.r){
+    if(d  <= c.r){ // se o valor de d for menor ou igual a raio do circulo
         return 1;
     } else {
         return 0;
