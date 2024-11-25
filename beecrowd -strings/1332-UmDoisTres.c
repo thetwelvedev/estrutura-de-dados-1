@@ -3,7 +3,7 @@
 
 void nomeIngles(char* nome){
     int tamanho = 0;
-    for(int i = 0; nome[i] != '\0'; i++){ //Pega o tamanho da string até chegar no '\0'
+    for(int i = 0; i < 6 && nome[i] != '\0' && nome[i] != '\n'; i++){ //Pega o tamanho da string até chegar no '\0'
         tamanho++;
     }
     if(tamanho == 5){
@@ -34,8 +34,7 @@ int main() {
     scanf("%d\n", &N);
     
     for(int i = 0; i < N; i++){
-        fgets(palavra, 6, stdin);
-        palavra[strcspn(palavra, "\n")] = '\0'; // Remove o '\n' no final da string
+        scanf("%s\n", &palavra);
         nomeIngles(palavra);
     }
  
