@@ -34,7 +34,7 @@ int main() {
     scanf("%d\n", &N);
     
     for(int i = 0; i < N; i++){
-        scanf("%s\n", &palavra);
+        scanf(" %6[^\n]", &palavra);
         nomeIngles(palavra);
     }
  
