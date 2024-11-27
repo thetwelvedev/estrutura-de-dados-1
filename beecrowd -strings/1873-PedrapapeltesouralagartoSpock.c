@@ -8,13 +8,27 @@ char* determinarVencedor(char* rajesh, char* sheldon) {
         return "empate";
     }
     //Vê as posibilidades que o rajesh ganha
-    if ((strcmp(rajesh, "tesoura") == 0 && (strcmp(sheldon, "papel") == 0 || strcmp(sheldon, "lagarto") == 0)) ||
-        (strcmp(rajesh, "papel") == 0 && (strcmp(sheldon, "pedra") == 0 || strcmp(sheldon, "spock") == 0)) ||
-        (strcmp(rajesh, "pedra") == 0 && (strcmp(sheldon, "tesoura") == 0 || strcmp(sheldon, "lagarto") == 0)) ||
-        (strcmp(rajesh, "lagarto") == 0 && (strcmp(sheldon, "spock") == 0 || strcmp(sheldon, "papel") == 0)) ||
-        (strcmp(rajesh, "spock") == 0 && (strcmp(sheldon, "tesoura") == 0 || strcmp(sheldon, "pedra") == 0))) {
+    if (strcmp(rajesh, "tesoura") == 0 && strcmp(sheldon, "papel") == 0) {
         return "rajesh";
-    } else{
+    } else if (strcmp(rajesh, "papel") == 0 && strcmp(sheldon, "pedra") == 0) {
+        return "rajesh";
+    } else if (strcmp(rajesh, "pedra") == 0 && strcmp(sheldon, "lagarto") == 0) {
+        return "rajesh";
+    } else if (strcmp(rajesh, "lagarto") == 0 && strcmp(sheldon, "spock") == 0) {
+        return "rajesh";
+    } else if (strcmp(rajesh, "spock") == 0 && strcmp(sheldon, "tesoura") == 0) {
+        return "rajesh";
+    } else if (strcmp(rajesh, "tesoura") == 0 && strcmp(sheldon, "lagarto") == 0) {
+        return "rajesh";
+    } else if (strcmp(rajesh, "lagarto") == 0 && strcmp(sheldon, "papel") == 0) {
+        return "rajesh";
+    } else if (strcmp(rajesh, "papel") == 0 && strcmp(sheldon, "spock") == 0) {
+        return "rajesh";
+    } else if (strcmp(rajesh, "spock") == 0 && strcmp(sheldon, "pedra") == 0) {
+        return "rajesh";
+    } else if (strcmp(rajesh, "pedra") == 0 && strcmp(sheldon, "tesoura") == 0) {
+        return "rajesh";
+    } else {
         return "sheldon";//Se não pe emapate e nem vitória do rajesh é vitória do sheldon
     }
 }
