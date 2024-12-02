@@ -1,13 +1,7 @@
 #include <stdio.h>
-//Testar se importa ou não o pilha.h
+#include <stdlib.h>
+#include "pilha.h"
 #define MAX 100
-typedef struct pilha {
-    int topo;
-    int v[MAX];
-} Pilha;
-
-
-typedef struct pilha Pilha;
 
 Pilha* criarPilha(){
     Pilha* p = (Pilha*) malloc(sizeof(Pilha));
@@ -53,3 +47,4 @@ int pilhaCheia(Pilha* p){
 int acessarTopo(Pilha* p){
     return p->v[p->topo-1]; //pois o topo(indice) está sempre um posição acima do topo(elemento)
 }
+//Aqui eu faço todas as funções que são declaradas em pilha.h e rodam em main.c
