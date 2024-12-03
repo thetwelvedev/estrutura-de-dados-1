@@ -5,7 +5,6 @@
 #define MAX 100
 
 void palindromoPila(Pilha* p){
-    char vetor[MAX];
     printf("Digite um nome: ");
     scanf("%s", p->v); //Armazena nome na pilha
 
