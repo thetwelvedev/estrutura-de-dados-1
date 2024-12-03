@@ -12,15 +12,10 @@ void palindromoPila(Pilha* p){
     //Ajusta o tamanho do topo de acordo com o tamanho da palavra
     p->topo = strlen(p->v);
 
-    //Vai armazenar metade da pilha no vetor
-    for (int i = 0; i < tamanhoPilha(p)/2; i++) {
-        vetor[i] = removerElemento(p);
-    }
-
     //Verifica se é palindromo
     int palindromo = 0;
     for (int i = 0; i < tamanhoPilha(p)/2; i++) {
-        if(vetor[i] == p->v[i]){
+        if(p->v[i] == removerElemento(p)){ //Vai comparar os primeiros elementos da pilha com os últimos
             palindromo = 1;
         } else{
             break;
