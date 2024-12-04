@@ -4,9 +4,20 @@
 #include "pilha.h"
 #define MAX 100
 
+void removerEspaco(Pilha* p) {
+    int index = 0;
+    for (int i = 0; i < strlen(p->v); i++) { //Vai pecorrer o tamanho da pilha
+        if (p->v[i] != ' ') { // Vê quando não tem espaço
+            p->v[index++] = p->v[i]; // Vai armazenado agora mas sem os espaços
+        }
+    }
+    p->v[index] = '\0'; // acrescenta o \0 para representar o final da string
+}
 void palindromoPila(Pilha* p){
     printf("Digite um nome: ");
-    scanf("%s", p->v); //Armazena nome na pilha
+    scanf("%[^\n]", p->v); //Armazena nome na pilha
+
+    removerEspaco(p);
 
     //Ajusta o tamanho do topo de acordo com o tamanho da palavra
     p->topo = strlen(p->v);
