@@ -8,8 +8,10 @@
 #### Ativadades do Sigaa
 - [x] Atividade 1 (entrega: 12/11)
 > Conteúdo: Alocação dinâmica: vetores, matrizes, strings...
-- [ ] Atividade 2 (entraga: 04/12)
+- [x] Atividade 2 (entraga: 04/12)
 > Conteúdo: Pilhas
+- [ ] Atividade 3 (entraga: 09/12)
+> Conteúdo: Fila Circular
 
 ##### Atividades do Beecrowd
 - [x] Atividade 1 - Strings (entrega: 26/11)
