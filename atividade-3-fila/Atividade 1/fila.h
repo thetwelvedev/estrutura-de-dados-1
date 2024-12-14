@@ -13,7 +13,7 @@ typedef struct fila
 
 Fila* criar_fila();
 int enfileirar(Fila*f, int valor);
-int desenfileirar(Fila*f, int* valor);
+int desenfileirar(Fila*f);
 int esta_vazia(Fila *f);
 int esta_cheia(Fila *f);
 void imprime(Fila *f);

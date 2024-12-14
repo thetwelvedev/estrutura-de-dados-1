@@ -10,7 +10,7 @@ int main() {
     enfileirar(f, 30);
     enfileirar(f, 40);
     imprime(f);
-    desenfileirar(f, &v);
+    desenfileirar(f);
     imprime(f);
     liberar(f);
     return 0;

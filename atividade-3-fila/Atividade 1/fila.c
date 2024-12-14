@@ -22,10 +22,10 @@ int enfileirar(Fila*f, int valor) {
     return 0;
 }
 
-int desenfileirar(Fila*f, int* valor) {    
+int desenfileirar(Fila*f) {    
     if (!esta_vazia(f)) {        
-        *valor = f->vet[f->ini++];
-        printf("Desenfileirando %d\n", *valor);
+        int valor = f->vet[f->ini++];
+        printf("Desenfileirando %d\n", valor);
         if (f->ini == MAX)
             f->ini = 0;
         f->tam--;
