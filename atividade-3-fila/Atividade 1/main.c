@@ -13,7 +13,6 @@ int main() {
     int id_veiculo = 101;
 
     while (1) {
-        // Simula a chegada de veículos
         Veiculo novo = gerar_veiculo(id_veiculo++);
         if (strcmp(novo.direcao, "NORTE") == 0) {
             enfileirar(fila_norte, novo);
@@ -21,7 +20,6 @@ int main() {
             enfileirar(fila_sul, novo);
         }
 
-        // Exibe o estado das filas
         printf("\nFila atual:\n");
         printf("[NORTE: ");
         for (int i = fila_norte->ini; i < fila_norte->fim && i < MAX; i++) {
@@ -35,11 +33,9 @@ int main() {
         }
         printf("\n");
 
-        // Controla o tráfego na ponte
         controlar_ponte(fila_norte, fila_sul);
 
-        // Pausa entre ciclos (simula o tempo de travessia)
-        Sleep(2000); // Pausa de 2 segundos
+        Sleep(2000);
     }
 
     liberar(fila_norte);
