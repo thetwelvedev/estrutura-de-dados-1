@@ -48,7 +48,7 @@ int main() {
                 Sleep(2000);
 
                 // Drone retorna à base
-                printf("Drone retornou à base.\n");
+                printf("Drone retornou a base.\n");
             } else {
                 // Pedido não pode ser entregue (excede a capacidade restante do drone)
                 printf("Pedido %d não pode ser entregue (excede capacidade restante).\n", pedido_atual.id);
