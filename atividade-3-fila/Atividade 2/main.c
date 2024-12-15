@@ -25,7 +25,7 @@ int main() {
     while (1) {
         // Simula a chegada de um novo pedido
         Pedido novo_pedido = gerar_pedido(id_pedido++);
-        printf("Novo pedido recebido: ID %d, Peso %dkg, Endereço: Rua %c\n", novo_pedido.id, novo_pedido.peso, novo_pedido.endereco[0]);
+        printf("Novo pedido recebido: ID %d, Peso %dkg, Endereco: Rua %c\n", novo_pedido.id, novo_pedido.peso, novo_pedido.endereco[0]);
         enfileirar(fila_pedidos, novo_pedido);
 
         // Exibe o estado da fila de pedidos
@@ -51,7 +51,7 @@ int main() {
                 printf("Drone retornou a base.\n");
             } else {
                 // Pedido não pode ser entregue (excede a capacidade restante do drone)
-                printf("Pedido %d não pode ser entregue (excede capacidade restante).\n", pedido_atual.id);
+                printf("Pedido %d nao pode ser entregue (excede capacidade restante).\n", pedido_atual.id);
                 desenfileirar(fila_pedidos); // Pedido descartado (aguarda próxima chance)
             }
         }
