@@ -51,6 +51,9 @@ void imprime(Fila *f){
     int j = f->ini;
     for (int i = 0; i < f->tam; i++){
         printf("%d ", f->v[j++]);
+        if (j == MAX) {
+            j = 0;
+        }
     }
     printf("\n");
 }
