@@ -161,5 +161,169 @@ void reverse_list(List* L){
 }
 //EX3 - Mesclar Duas Listas
 List* merge_sorted_lists(List* L1, List* L2){
-    
+    List* merged = create_list();
+    Nodo *p1 = L1->head, *p2 = L2->head;
+
+    while (p1 != NULL && p2 != NULL) {
+        if (p1->info < p2->info) {
+            list_insert(merged, p1->info);
+            p1 = p1->next;
+        } else {
+            list_insert(merged, p2->info);
+            p2 = p2->next;
+        }
+    }
+
+    while (p1 != NULL) {
+        list_insert(merged, p1->info);
+        p1 = p1->next;
+    }
+
+    while (p2 != NULL) {
+        list_insert(merged, p2->info);
+        p2 = p2->next;
+    }
+
+    reverse_list(merged); // Para manter a ordem crescente
+    return merged;
+}
+
+//EX4 - Remover Elementos Duplicados
+void remove_duplicates(List *L){
+    Nodo *current = L->head;
+    while (current != NULL) {
+        Nodo *runner = current;
+        while (runner->next != NULL) {
+            if (runner->next->info == current->info) {
+                Nodo *temp = runner->next;
+                runner->next = runner->next->next;
+                free(temp);
+                L->len--;
+            } else {
+                runner = runner->next;
+            }
+        }
+        current = current->next;
+    }
+}
+
+//EX5 - Verificar Palíndromo
+int is_palindrome(List *L) {
+    if (is_empty(L)) 
+        return 1; // Lista vazia é um palíndromo por definição.
+
+    // Alocando dinamicamente memória para armazenar os elementos.
+    int *arr = (int *)malloc(L->len * sizeof(int));
+    if (arr == NULL) {
+        printf("Erro: Falha ao alocar memória.\n");
+        return 0;
+    }
+
+    int i = 0;
+    for (Nodo *p = L->head; p != NULL; p = p->next) {
+        arr[i++] = p->info;
+    }
+
+    // Verificando se é palíndromo.
+    for (int j = 0; j < i / 2; j++) {
+        if (arr[j] != arr[i - j - 1]) {
+            free(arr); // Liberando memória antes de retornar.
+            return 0;
+        }
+    }
+
+    free(arr); // Liberando memória alocada dinamicamente.
+    return 1;
+}
+
+
+//EX6 - Rotacionar a Lista
+void rotate_list(List *L, int k){
+    if (is_empty(L) || k <= 0) return;
+
+    k = k % L->len;
+    if (k == 0) return;
+
+    Nodo *tail = L->head;
+    Nodo *new_tail = NULL;
+    int count = 1;
+
+    while (count < L->len - k) {
+        tail = tail->next;
+        count++;
+    }
+
+    new_tail = tail;
+    tail = tail->next;
+    new_tail->next = NULL;
+
+    Nodo *new_head = tail;
+    while (tail->next != NULL) {
+        tail = tail->next;
+    }
+
+    tail->next = L->head;
+    L->head = new_head;
+}
+
+//EX7 - Intercalar Listas
+List* intercalate_lists(List *L1, List *L2){
+    List* intercalated = create_list();
+    Nodo *p1 = L1->head, *p2 = L2->head;
+
+    while (p1 != NULL || p2 != NULL) {
+        if (p1 != NULL) {
+            list_insert(intercalated, p1->info);
+            p1 = p1->next;
+        }
+        if (p2 != NULL) {
+            list_insert(intercalated, p2->info);
+            p2 = p2->next;
+        }
+    }
+
+    reverse_list(intercalated); // Para manter a ordem correta
+    return intercalated;
+}
+
+//EX8 - Encontrar o K-ésimo Elemento
+int get_kth_element(List *L, int k){
+    if (k < 0 || k >= L->len) return -1;
+
+    Nodo *p = L->head;
+    for (int i = 0; i < k; i++) {
+        p = p->next;
+    }
+    return p->info;
+}
+
+//EX9 - Dividir a Lista
+void split_list(List *L, List **even_list, List **odd_list){
+    *even_list = create_list();
+    *odd_list = create_list();
+
+    for (Nodo *p = L->head; p != NULL; p = p->next) {
+        if (p->info % 2 == 0) {
+            list_insert(*even_list, p->info);
+        } else {
+            list_insert(*odd_list, p->info);
+        }
+    }
+    reverse_list(*even_list);
+    reverse_list(*odd_list);
+}
+
+//EX10 - Ordenar Lista
+void sort_list(List *L){
+    if (is_empty(L)) return;
+
+    for (Nodo *i = L->head; i != NULL; i = i->next) {
+        for (Nodo *j = i->next; j != NULL; j = j->next) {
+            if (i->info > j->info) {
+                int temp = i->info;
+                i->info = j->info;
+                j->info = temp;
+            }
+        }
+    }
 }

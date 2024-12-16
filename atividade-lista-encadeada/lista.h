@@ -25,4 +25,18 @@ int lis_sum(List* L);
 void reverse_list(List* L);
 //atividade 3 de Mesclar Duas Listas
 List* merge_sorted_lists(List* L1, List* L2);
+//EX4 - Remover Elementos Duplicados
+void remove_duplicates(List *L);
+//EX5 - Verificar Palíndromo
+int is_palindrome(List *L);
+//EX6 - Rotacionar a Lista
+void rotate_list(List *L, int k);
+//EX7 - Intercalar Listas
+List* intercalate_lists(List *L1, List *L2);
+//EX8 - Encontrar o K-ésimo Elemento
+int get_kth_element(List *L, int k);
+//EX9 - Dividir a Lista
+void split_list(List *L, List **even_list, List **odd_list);
+//EX10 - Ordenar Lista
+void sort_list(List *L);
 #endif
