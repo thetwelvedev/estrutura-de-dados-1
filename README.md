@@ -12,9 +12,13 @@
 > Conteúdo: Pilhas
 - [x] Atividade 3 (entraga: 15/12)
 > Conteúdo: Fila Circular
+- [ ] Atividade 4 (entrega: )
+> Conteúdo: Lista Encadeada
 
 ##### Atividades do Beecrowd
 - [x] Atividade 1 - Strings (entrega: 26/11)
+- [ ] Atividsde 2 - Pilha (entrega: 31/01)
+- [ ] Atividsde 3 - Filha (entrega: 31/01)
 
 ### Ferramentas e linguagens utilizadas:
 <div>
