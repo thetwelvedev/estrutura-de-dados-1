@@ -12,7 +12,7 @@
 > Conteúdo: Pilhas
 - [x] Atividade 3 (entraga: 15/12)
 > Conteúdo: Fila Circular
-- [ ] Atividade 4 (entrega: )
+- [x] Atividade 4 (entrega: 15/12)
 > Conteúdo: Lista Encadeada
 
 ##### Atividades do Beecrowd
