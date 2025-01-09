@@ -15,7 +15,7 @@
 - [x] Atividade 4 (entrega até 23/12)
 > Conteúdo: Lista Encadeada
 
-##### Atividades do Beecrowd
+#### Atividades do Beecrowd
 - [x] Atividade 1 - Strings (entrega até 26/11)
 - [ ] Atividsde 2 - Pilha (entrega até 31/01)
 - [ ] Atividsde 3 - Filha (entrega até 31/01)
