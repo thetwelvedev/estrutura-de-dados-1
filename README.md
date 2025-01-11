@@ -7,7 +7,7 @@
 
 #### Ativadades do Sigaa
 - [x] Atividade 1 (entrega até 17/11)
-> Conteúdo: Alocação dinâmica: vetores, matrizes, strings...
+> Conteúdo: Alocação dinâmica: vetores, matrizes, strings e TAD
 - [x] Atividade 2 (entrega até 04/12)
 > Conteúdo: Pilhas
 - [x] Atividade 3 (entrega até 15/12)
