@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "2062-OBIURI.C": "cpp"
+        "2062-OBIURI.C": "cpp",
+        "stdlib.h": "c"
     }
 }
