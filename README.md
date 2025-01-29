@@ -7,7 +7,7 @@
 
 #### Ativadades do Sigaa
 - [x] Atividade 1 (entrega até 17/11)
-> Conteúdo: Alocação dinâmica: vetores, matrizes, strings...
+> Conteúdo: Alocação dinâmica: vetores, matrizes, strings e TAD
 - [x] Atividade 2 (entrega até 04/12)
 > Conteúdo: Pilhas
 - [x] Atividade 3 (entrega até 15/12)
@@ -15,7 +15,7 @@
 - [x] Atividade 4 (entrega até 23/12)
 > Conteúdo: Lista Encadeada
 
-##### Atividades do Beecrowd
+#### Atividades do Beecrowd
 - [x] Atividade 1 - Strings (entrega até 26/11)
 - [ ] Atividsde 2 - Pilha (entrega até 31/01)
 - [ ] Atividsde 3 - Filha (entrega até 31/01)
