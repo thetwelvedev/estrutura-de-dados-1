@@ -14,6 +14,8 @@
 > Conteúdo: Fila Circular
 - [x] Atividade 4 (entrega até 23/12)
 > Conteúdo: Lista Encadeada
+- [x] Atividade Extra (entrega até 28/01)
+> Conteúdo: Lista Encadeada
 
 #### Atividades do Beecrowd
 - [x] Atividade 1 - Strings (entrega até 26/11)
