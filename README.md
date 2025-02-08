@@ -6,21 +6,23 @@
 ### Exercícios da matéria de Estrutura de Dados 1 de 2024.2 de Ciências da Computação
 
 #### Ativadades do Sigaa
-- [x] Atividade 1 (entrega até 17/11)
+- [x] Atividade 1 (entrega até 17/11/24)
 > Conteúdo: Alocação dinâmica: vetores, matrizes, strings e TAD
-- [x] Atividade 2 (entrega até 04/12)
+- [x] Atividade 2 (entrega até 04/12/24)
 > Conteúdo: Pilhas
-- [x] Atividade 3 (entrega até 15/12)
+- [x] Atividade 3 (entrega até 15/12/24)
 > Conteúdo: Fila Circular
-- [x] Atividade 4 (entrega até 23/12)
+- [x] Atividade 4 (entrega até 23/12/24)
 > Conteúdo: Lista Encadeada
-- [x] Atividade Extra (entrega até 28/01)
+- [x] Atividade Extra (entrega até 28/01/24)
 > Conteúdo: Lista Encadeada
+- [ ] Atividade 5 (entrega até 12/02/25)
+> Conteúdo: Lista Duplamente Encadeada
 
 #### Atividades do Beecrowd
-- [x] Atividade 1 - Strings (entrega até 26/11)
-- [ ] Atividsde 2 - Pilha (entrega até 31/01)(atrasado)
-- [ ] Atividsde 3 - Filha (entrega até 31/01)(atrasado)
+- [x] Atividade 1 - Strings (entrega até 26/11/24)
+- [ ] Atividsde 2 - Pilha (entrega até 31/01/25)(atrasado)
+- [ ] Atividsde 3 - Filha (entrega até 31/01/25)(atrasado)
 
 ### Ferramentas e linguagens utilizadas:
 <div>
