@@ -16,7 +16,7 @@
 > Conteúdo: Lista Encadeada
 - [x] Atividade Extra (entrega até 28/01/24)
 > Conteúdo: Lista Encadeada
-- [ ] Atividade 5 (entrega até 10/02/25)
+- [x] Atividade 5 (entrega até 10/02/25)
 > Conteúdo: Lista Duplamente Encadeada
 
 #### Atividades do Beecrowd
