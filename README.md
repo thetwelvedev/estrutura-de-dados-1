@@ -20,9 +20,9 @@
 > Conteúdo: Lista Duplamente Encadeada
 - [ ] Trabalho Final (10pts)
 > Conteúdo: Ordenação
-> - [ ] Trabalho Escrito (entrega até 20/02/25) (2pts)
-> - [ ] Apresentação (entrega até 17/02/25) (3pts)
-> - [ ] Sistema em C (entrega até 20/02/25) (5pts)
+> - [x] Trabalho Escrito (entrega até 24/02/25) (2pts)
+> - [x] Apresentação (entrega até 17/02/25) (3pts)
+> - [ ] Sistema em C (entrega até 24/02/25) (5pts)
 
 #### Atividades do Beecrowd
 - [x] Atividade 1 - Strings (entrega até 26/11/24)
