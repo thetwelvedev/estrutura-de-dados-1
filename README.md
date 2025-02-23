@@ -19,7 +19,7 @@
 - [x] Atividade 5 (entrega até 10/02/25)
 > Conteúdo: Lista Duplamente Encadeada
 - [ ] Trabalho Final (10pts)
-> Conteúdo: Ordenação
+> Conteúdo: Busca e Ordenação
 > - [x] Trabalho Escrito (entrega até 24/02/25) (2pts)
 > - [x] Apresentação (entrega até 17/02/25) (3pts)
 > - [ ] Sistema em C (entrega até 24/02/25) (5pts)
