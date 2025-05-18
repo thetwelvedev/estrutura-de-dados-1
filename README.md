@@ -26,8 +26,8 @@
 
 #### Atividades do Beecrowd
 - [x] Atividade 1 - Strings (entrega até 26/11/24)
-- [ ] Atividsde 2 - Pilha (entrega até 31/01/25)(Não entregue)
-- [ ] Atividsde 3 - Filha (entrega até 31/01/25)(Não entregue)
+- [ ] Atividsde 2 - Pilha (entrega até 31/01/25)
+- [ ] Atividsde 3 - Filha (entrega até 31/01/25)
 
 ### Ferramentas e linguagens utilizadas:
 <div>
